@@ -7,7 +7,6 @@
     --font-secundary: "Montserrat", sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,8 @@
     overflow: hidden;
     margin: auto;
 }
+
+/* BANNER | HERO */
 
 .banner-hero {
     display: flex;
@@ -42,7 +43,7 @@
     transition-duration: 0.5s;
 }
 
-/*Description Product*/
+/* DESCRIPTION | PRODUCT */
 
 .content-description {
     width: 95%;
@@ -84,7 +85,7 @@
     padding-top: 20px;
 }
 
-/* Cards CV */
+/* TARJETAS |  CV */
 
 .content-cv-content {
     display: flex;
@@ -114,7 +115,7 @@
     transition-duration: 0.5s;
 }
 
-/* Cards CV - info */
+/* CARDS CV | INFO */
 
 .info-cv-product {
     width: 90%;
@@ -145,37 +146,6 @@
     padding: 10px;
     margin: 10px;
 }
-
-/* Banner | Auto */
-
-.banner-auto{
-    background: #F2994A;
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
-    background: linear-gradient(to right, #F2C94C, #F2994A);
-    height: 250px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-auto h2{
-    text-align: center;
-    font-family: var(--font-principal);
-    color: #fff;
-    font-size: 32px;
-}
-
-.banner-auto p{
-    text-align: center;
-    font-family: var(--font-secundary);
-    font-size: 24px;
-    color: #fff;
-    padding-top: 30px;
-}
-
 
 /* TARGETAS PO */
 
@@ -252,11 +222,11 @@
 }
 
 
-/* Vitrina */
+/* VITRINA | VTEX */
 .content-vitrina {
-    background: #FBD3E9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FBD3E9;  
+    background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  
+    background: linear-gradient(to right, #BB377D, #FBD3E9); 
     height: 350px;
     margin-top: 30px;
 }
@@ -273,8 +243,7 @@
     margin-top: -290px;
 }
 
-
-/* Banner Promotion*/
+/* BANNER | PROMOTION */
 
 .container-promotion {
     display: flex;
@@ -317,11 +286,13 @@
 .img-mobil{
     display: none;
 }
+
+
 /* FAQS */
 
 
 
-/* Media query */
+/* MEDIA |  QUERY */
 
 @media only screen and (max-width: 768px) {
 
@@ -399,7 +370,7 @@
     }
 
     .container-promotion::-webkit-scrollbar-thumb {
-        background-color: #dda90d;
+        background-color: #BB377D;
         border-radius: 4px;
 
     }
@@ -407,7 +378,7 @@
     /* SLIDER PRODUCT CONTAINE */
 
     .product-container {
-        width: 195%;
+        width: 190%;
         display: flex;
         justify-content: flex-start;
         overflow-x: auto;
@@ -415,7 +386,7 @@
     }
 
     .product-img {
-        width: 100%;
+        width: 95%;
         scroll-snap-align: center;
     }
 
@@ -427,7 +398,7 @@
     }
 
     .content-cv-content::-webkit-scrollbar-thumb {
-        background-color: #dda90d;
+        background-color: #BB377D;
         border-radius: 4px;
 
     }
@@ -456,7 +427,7 @@
     }
 
     .container-card::-webkit-scrollbar-thumb {
-        background-color: #dda90d;
+        background-color: #BB377D;
         border-radius: 4px;
     }
 
@@ -468,7 +439,7 @@
         display:block ;
     }
 
-    /*Vitrina */
+    /* VITRINA | VTEX */
     .content-vitrina h2 {
         font-size: 14px;
     }
