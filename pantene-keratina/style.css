@@ -1,0 +1,512 @@
+:root {
+    --color-grid:#f5f4eec7;
+    --color-fonts:#dda90d;
+    --titule-text: 24px;
+    --parrafo-text: 16px;
+    --font-principal: "Archivo", sans-serif;
+    --font-secundary: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    max-width: 1280px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.banner-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    max-height: 353px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.banner-hero img{
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.banner-hero img:hover{
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+}
+
+/*Description Product*/
+
+.content-description{
+    width: 95%;
+    height: auto;
+    background-color: var(--color-grid);
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.75rem;
+    margin-top: 50px;
+}
+
+.title-description {
+    text-align: center;
+    font-size: var(--titule-text);
+    font-family: var(--font-principal);
+    margin: 5px;
+    padding: 5px;
+}
+
+.parrafo-description {
+    text-align: center;
+    font-size: var(--parrafo-text);
+    font-family: var(--font-secundary);
+
+}
+
+/* Cards CV */
+
+.content-cv-content {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(180deg, #ffff 50%, #f6f6f6 50%);
+    margin-top: 10px;
+}
+
+.product-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.product-img {
+   max-width: 100%;
+   border-radius: 0.75rem;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.product-img:hover{
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+}
+
+/* Cards CV - info */
+
+.info-cv-product {
+    width: 90%;
+    height: auto;
+    padding-bottom: 60px;
+    background-color: var(--color-grid);
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-product {
+    font-size: var(--titule-text);
+    font-family: var(--font-principal);
+    padding: 10px;
+    margin: 10px;
+}
+
+.parrafo-product {
+    font-size: var(--parrafo-text);
+    font-family: var(--font-secundary);
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Banner Promotion*/
+
+.container-promotion {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.promotion-content {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    padding: 10px;
+}
+
+.promotion-img {
+    width: calc(100% - 5px);
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.promotion-img:hover{
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+}
+
+.titule-content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.titule-promotion {
+    font-size: var(--titule-text);
+    font-family: "Archivo", sans-serif;
+    margin: 5px;
+    color: var(--color-fonts);
+}
+
+/* TARGETAS PO */
+
+.titule-cards {
+    font-size: var(--titule-text);
+    font-family: var(--font-principal);
+    color: var(--color-fonts);
+    margin:10px;
+    text-align: left;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cards-img {
+    max-width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cards-img:hover{
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+}
+    
+
+.cards-slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* FAQS */
+.container-faqs {
+    background-color:var(--color-grid);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.titule-content-faqs {
+    margin: 30px auto;
+}
+
+.titule-faqs {
+    font-size: var(--titule-text);
+    font-family: var(--font-secundary);
+}
+
+.faq-section {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question {
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    font-size: 11pt;
+    font-family: var(--font-principal);
+    color: #0072c2;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border-top: none;
+    font-size: 10pt;
+    font-family: var(--font-secundary);
+    color: #0072c2;
+    font-weight: 500;
+    background: #ffff;
+}
+
+input:checked+label+.answer {
+    display: block;
+}
+
+label {
+    display: block;
+    padding: 15px;
+    background-color: #ffff;
+    cursor: pointer;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #e30613;
+}
+
+input:checked+label .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+/* Vitrina */
+.content-vitrina{
+    background: #f1cea1;  
+    background: -webkit-linear-gradient(to right, #fed8c6, #EECDA3);  
+    background: linear-gradient(to right, #fed8c6, #EECDA3);
+    height: 350px;
+    margin-top: 30px;
+}
+
+.content-vitrina h2{
+    color: #ffff;
+    font-size: var(--titule-text);
+    font-family: var(--font-principal);
+    padding: 5px;
+}
+
+.vtex-slider-layout-0-x-sliderLayoutContainer--global__landing--title-general {
+    padding: 0 1rem;
+    margin-top: -290px;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 768px) {
+
+    /*Banner Hero*/
+    .banner-hero{
+        margin-top: 0;
+    }
+    .banner-hero img{
+        width: 408px;
+        height: 186px;
+    
+    }
+
+    /*Description Product*/
+
+    .content-description {
+        margin: 10px;
+    }
+
+    .title-description {
+        font-size: 14pt;
+    }
+
+    .title-vitrina{
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    .parrafo-description {
+        font-size: 10pt;
+    }
+
+    .titule-promotion, .titule-cards, .titule-faqs {
+        font-size: 14pt;
+    }
+
+    .content-cv-content{
+        background: none;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+
+    }
+    .info-cv-product {
+        display: none;
+    }
+
+   /* FAQS  */
+
+    .question {
+        width: 45%;
+        margin: 5px;
+    }
+
+    label {
+        font-size: 11pt;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .material-symbols-outlined {
+        width: 8%;
+    }
+
+    .answer{
+        width:100%;
+    }
+
+
+    /*  SLIDER CONTAINER */
+
+    .slider-container {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .promotion-content {
+        display: flex;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slide {
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: center;
+    }
+
+    .container-promotion::-webkit-scrollbar {
+        background-color: #f1f1f1;
+        height: 3px;
+        
+    }
+    
+    .container-promotion::-webkit-scrollbar-thumb {
+        background-color: #dda90d;
+        border-radius: 4px;
+
+    }
+
+    /* SLIDER PRODUCT CONTAINE */
+
+    .product-container{
+      width: 195%;
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding: 8px;
+    }
+
+    .product-img {
+        width: 100%;
+        scroll-snap-align: center;
+    }
+
+    
+    .content-cv-content::-webkit-scrollbar {
+        background-color: #f1f1f1;
+        height: 3px;
+        
+    }
+    
+    .content-cv-content::-webkit-scrollbar-thumb {
+        background-color: #dda90d;
+        border-radius: 4px;
+
+    }
+
+    /* SLIDER CARDS CV */
+
+    .cards-slide{
+        width: 195%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 8px;
+
+    }
+
+    .cards-img{
+        width: 100%;
+        scroll-snap-align: center;
+
+    }
+
+    .container-card::-webkit-scrollbar {
+        background-color: #f1f1f1;
+        height: 3px;
+        
+    }
+    
+    .container-card::-webkit-scrollbar-thumb {
+        background-color: #dda90d;
+        border-radius: 4px;
+
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 399px) {
+    label {
+        font-size: 8pt;
+        text-align: left;
+        width: 100%;
+    }
+
+    .question {
+        width: 100%; 
+
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    label {
+        font-size: 8pt;
+        text-align: left;
+        width: 100%;
+    }
+
+    .question {
+        width: 100%; 
+
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .question {
+        width: 100%; 
+
+    }
+}
+
+
+
+
+
+
+
+
+
